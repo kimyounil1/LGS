@@ -1,0 +1,45 @@
+backend/
+├── app/
+│   ├── api/
+│   │   └── v1/
+│   │       └── endpoints/
+│   │           ├── auth.py
+│   │           ├── persona.py
+│   │           ├── chat.py
+│   │           └── __init__.py
+│   ├── core/
+│   │   ├── config.py
+│   │   └── __init__.py
+│   ├── db/
+│   │   ├── models/
+│   │   │   ├── user.py
+│   │   │   ├── persona.py
+│   │   │   ├── message.py
+│   │   │   └── __init__.py
+│   │   ├── session.py
+│   │   └── base.py
+│   ├── schemas/
+│   │   ├── user.py
+│   │   ├── persona.py
+│   │   └── message.py
+│   ├── services/
+│   │   ├── gpt_service.py
+│   │   └── __init__.py
+│   ├── main.py
+│   └── __init__.py
+├── Dockerfile
+├── requirements.txt
+└── .env
+
+
+frontend/
+├── pages/
+│   ├── index.tsx          # 로그인
+│   └── chat.tsx           # 채팅 페이지
+├── components/
+│   ├── Sidebar.tsx        # 캐릭터 리스트
+│   └── ChatBox.tsx        # 대화창 (다음 단계에서)
+├── lib/
+│   └── api.ts             # axios 설정
+├── hooks/
+│   └── useAuth.ts         # 로그인 관리 훅
