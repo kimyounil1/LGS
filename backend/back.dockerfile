@@ -8,6 +8,11 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
+<<<<<<< HEAD
+RUN apt-get update && apt-get install -y git
+
+=======
+>>>>>>> origin/master
 # Python 종속성 설치 (캐시 효율화)
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt

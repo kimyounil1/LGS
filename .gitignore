@@ -13,7 +13,7 @@
 /frontend/.next/
 # testing
 /coverage
-
+_pycache_/
 # next.js
 /.next/
 /out/

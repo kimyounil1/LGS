@@ -9,7 +9,11 @@ export default function UploadPage() {
   const [file, setFile] = useState<File | null>(null);
   const [error, setError] = useState("");
   const [profile, setProfile] = useState<File | null>(null);
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> origin/master
   const handleUpload = async () => {
     if (!name || !file) {
       setError("이름과 파일은 필수입니다.");
@@ -17,7 +21,10 @@ export default function UploadPage() {
     }
 
     const formData = new FormData();
+<<<<<<< HEAD
+=======
     formData.append("file", file);
+>>>>>>> origin/master
     if (profile) formData.append("profile", profile);
     formData.append("name", name);
     if (mbti) formData.append("mbti", mbti);
@@ -56,19 +63,31 @@ export default function UploadPage() {
         onChange={(e) => setMbti(e.target.value)}
         className="border p-2 mb-2 w-full"
       />
+<<<<<<< HEAD
+      <p className="font-semibold">카카오톡 내역 추가하기(필수)</p>
+=======
+>>>>>>> origin/master
       <input
         type="file"
         accept=".txt"
         onChange={(e) => setFile(e.target.files?.[0] || null)}
         className="mb-4"
+<<<<<<< HEAD
+      />
+      <p className="font-semibold">프로필 이미지 업로드(선택)</p>
+=======
         value={"카카오톡 대화 업로드드"}
       />
+>>>>>>> origin/master
       <input
         type="file"
         accept="image/*"
         onChange={(e) => setProfile(e.target.files?.[0] || null)}
         className="mb-4"
+<<<<<<< HEAD
+=======
         value={"프로필 사진"}
+>>>>>>> origin/master
         />
         <br></br>
       <button

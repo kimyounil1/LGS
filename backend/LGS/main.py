@@ -1,5 +1,9 @@
 from fastapi import FastAPI
+<<<<<<< HEAD
+from LGS.api.v1.endpoints import auth, persona, chat, conversations, forecast
+=======
 from LGS.api.v1.endpoints import auth, persona, chat
+>>>>>>> origin/master
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 #아래는 초기값 설정
@@ -33,3 +37,9 @@ app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 app.include_router(auth.router, prefix="/api/v1/auth", tags=["Auth"])
 app.include_router(persona.router, prefix="/api/v1/persona", tags=["Persona"])
 app.include_router(chat.router, prefix="/api/v1/chat", tags=["Chat"])
+<<<<<<< HEAD
+app.include_router(conversations.router, prefix="/api/v1/conversations", tags=["Conversations"])
+app.include_router(forecast.router, prefix="/api/v1/forecast", tags=["Forecast"])
+
+=======
+>>>>>>> origin/master

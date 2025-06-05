@@ -12,7 +12,11 @@ import os
 from uuid import uuid4
 
 UPLOAD_DIR = "uploads/profiles"
+<<<<<<< HEAD
+DEFAULT_PROFILE = "/default-profile.png"  # ✅ 기본 이미지 경로 (FastAPI가 제공하는 static path 기준)
+=======
 DEFAULT_PROFILE = "/uploads/profiles/default-profile.png"  # ✅ 기본 이미지 경로 (FastAPI가 제공하는 static path 기준)
+>>>>>>> origin/master
 
 router = APIRouter()
 

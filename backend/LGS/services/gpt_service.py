@@ -48,3 +48,25 @@ def chat_with_persona(persona, history: list) -> str:
     )
 
     return response.choices[0].message.content
+<<<<<<< HEAD
+
+def generate_response(prompt: str) -> str:
+    response = client.chat.completions.create(
+        model="gpt-4.1",
+        messages=[
+            {
+                "role": "system",
+                "content": "너는 인간관계 분석과 호감 대화 코치 역할을 하는 AI야. 사용자에게 전략적이고 따뜻한 조언을 해줘."
+            },
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ],
+        temperature=0.7,
+        max_tokens=1000
+    )
+
+    return response.choices[0].message.content
+=======
+>>>>>>> origin/master

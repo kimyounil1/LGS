@@ -9,4 +9,24 @@ python-multipart
 pydantic-settings>=2.0.0
 email-validator>=2.0.0
 pydantic
+<<<<<<< HEAD
 python-jose
+# Finace Analysis Tool
+# Core ML and preprocessing
+tensorflow==2.10.0
+scikit-learn==1.2.2
+numpy==1.23.5
+pandas==1.5.3
+feedparser==6.0.11
+
+# Finance data
+git+https://github.com/ranaroussi/yfinance.git@main
+
+# Sentiment analysis
+nltk==3.8.1
+
+# Visualization
+matplotlib==3.7.1
+=======
+python-jose
+>>>>>>> origin/master

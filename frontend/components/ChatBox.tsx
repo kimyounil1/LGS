@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+import { useEffect, useState, useRef, useLayoutEffect } from "react";
+=======
 import { useEffect, useState } from "react";
+>>>>>>> origin/master
 import api from "@/lib/api";
 import Image from "next/image";
 
@@ -22,6 +26,10 @@ export default function ChatBox({ persona }: Props) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [showSummary, setShowSummary] = useState(false);
+<<<<<<< HEAD
+  const scrollRef = useRef<HTMLDivElement>(null);
+=======
+>>>>>>> origin/master
 
   useEffect(() => {
     if (!persona) return;
@@ -31,6 +39,19 @@ export default function ChatBox({ persona }: Props) {
       .catch(() => setMessages([]));
   }, [persona]);
 
+<<<<<<< HEAD
+  useLayoutEffect (() => {
+    scrollToBottom();
+  }, [messages]);
+
+  const scrollToBottom = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    }
+  };
+
+=======
+>>>>>>> origin/master
   const handleSend = async () => {
     if (!input.trim() || !persona) return;
     const res = await api.post("/chat/send", {
@@ -60,7 +81,11 @@ export default function ChatBox({ persona }: Props) {
       </div>
 
       {/* 🔹 채팅 메시지 영역 */}
+<<<<<<< HEAD
+      <div ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-2 space-y-3 bg-gray-50">
+=======
       <div className="flex-1 overflow-y-auto px-4 py-2 space-y-3 bg-gray-50">
+>>>>>>> origin/master
         {persona ? (
           messages.map((msg) => (
             <div
