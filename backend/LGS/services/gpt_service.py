@@ -48,7 +48,6 @@ def chat_with_persona(persona, history: list) -> str:
     )
 
     return response.choices[0].message.content
-<<<<<<< HEAD
 
 def generate_response(prompt: str) -> str:
     response = client.chat.completions.create(
@@ -68,5 +67,3 @@ def generate_response(prompt: str) -> str:
     )
 
     return response.choices[0].message.content
-=======
->>>>>>> origin/master

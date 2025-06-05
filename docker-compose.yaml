@@ -8,17 +8,11 @@ services:
       dockerfile: front.dockerfile
     ports:
       - "3000:3000"
-<<<<<<< HEAD
       - "24678:24678" # HMR 통신 포트
     environment:
       - NODE_ENV=development
       - NEXT_PUBLIC_API_URL=http://backend:8000
       - CHOKIDAR_USEPOLLING=true
-=======
-    environment:
-      - NODE_ENV=development
-      - NEXT_PUBLIC_API_URL=http://backend:8000
->>>>>>> origin/master
     volumes:
       - ./frontend:/app
     depends_on:

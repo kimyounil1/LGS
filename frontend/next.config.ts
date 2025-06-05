@@ -1,5 +1,4 @@
 import type { NextConfig } from "next";
-<<<<<<< HEAD
 
 const nextConfig: NextConfig = {
   transpilePackages: ['@radix-ui/react-slot'],
@@ -14,15 +13,6 @@ const nextConfig: NextConfig = {
     };
     return config;
   },
-=======
-module.exports = {
-  images: {
-    domains: ["localhost"],
-  },
-};
-const nextConfig: NextConfig = {
-  /* config options here */
->>>>>>> origin/master
 };
 
 export default nextConfig;
